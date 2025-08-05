@@ -54,14 +54,16 @@ function getRandomGreeting(isEvening) {
       finnish: "Hyvää huomenta",
       estonian: "Tere hommikust",
       chinese: "早上好",
-      japanese: "おはようございます"
+      japanese: "おはようございます",
+      french: "Bonjour",
     },
     evening: {
       english: "Good Evening",
       finnish: "Hyvää iltaa",
       estonian: "Tere õhtust",
       chinese: "晚上好",
-      japanese: "こんばんは"
+      japanese: "こんばんは",
+      french: "Bonsoir",
     }
   };
 
