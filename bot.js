@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { Client, GatewayIntentBits } = require("discord.js");
 const axios = require("axios");
 const schedule = require("node-schedule");
@@ -14,12 +15,12 @@ const client = new Client({
 
 //const CHANNEL_ID =  "1332496853765455954"
 const CHANNEL_ID =  "1285595155901976610"
-const TOKEN = "DISCORD_BOT_TOKEN"; // Replace with your bot token
+const TOKEN = process.env.DISCORD_BOT_TOKEN;
 
 // Blockchain API
 const API_URL = "http://localhost:8589"; // Replace with your blockchain node URL
-const RPC_USER = "YOUR_RPC_USERNAME"; // Replace with your RPC username
-const RPC_PASSWORD = "YOUR_RPC_PASSWORD"; // Replace with your RPC password
+const RPC_USER = process.env.RPC_USER;
+const RPC_PASSWORD = process.env.RPC_PASSWORD;
 
 // Fetch hash rate
 async function getHashRate() {
